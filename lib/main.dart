@@ -1,4 +1,4 @@
-ts_sec3_responsive_desingimport 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 
 void main() {
   runApp(const MyApp());
