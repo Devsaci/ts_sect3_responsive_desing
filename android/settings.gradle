@@ -1,3 +1,5 @@
+
+//testgradel setting gradele
 pluginManagement {
     def flutterSdkPath = {
         def properties = new Properties()
