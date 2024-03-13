@@ -21,6 +21,8 @@ class CustomsSliverGrid extends StatelessWidget {
     return SliverGrid.builder(
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
+        mainAxisSpacing: 15,
+        crossAxisSpacing: 15,
       ),
       itemBuilder: (BuildContext context, int index) {
         return Container(
