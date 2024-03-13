@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'view/home_view.dart';
+
 void main() {
   runApp(const AdaptedApp());
 }
@@ -17,15 +19,5 @@ class AdaptedApp extends StatelessWidget {
       ),
       home: const HomeView(),
     );
-  }
-}
-
-class HomeView extends StatelessWidget {
-  const HomeView({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    // TODO: implement build
-    throw UnimplementedError();
   }
 }
