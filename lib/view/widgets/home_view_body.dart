@@ -5,10 +5,13 @@ class HomeViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const CustomScrollView(
-      slivers: [
-        CustomsSliverGrid(),
-      ],
+    return const Padding(
+      padding: EdgeInsets.symmetric(horizontal: 15),
+      child: CustomScrollView(
+        slivers: [
+          CustomsSliverGrid(),
+        ],
+      ),
     );
   }
 }
