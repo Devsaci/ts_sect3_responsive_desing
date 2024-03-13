@@ -14,7 +14,7 @@ class HomeView extends StatelessWidget {
         title: const Text('Home', style: TextStyle(color: Color(0xFFE8F5E9))),
         centerTitle: true,
       ),
-      body: HomeViewBody(),
+      body: const HomeViewBody(),
     );
   }
 }
