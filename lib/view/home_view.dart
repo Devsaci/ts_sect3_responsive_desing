@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ts_sect3_responsive_desing/view/widgets/home_view_body.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
@@ -13,6 +14,7 @@ class HomeView extends StatelessWidget {
         title: const Text('Home', style: TextStyle(color: Color(0xFFE8F5E9))),
         centerTitle: true,
       ),
+      body: HomeViewBody(),
     );
   }
 }
