@@ -18,4 +18,5 @@ Cross-Platform Testing and Optimization: Delve into methods for testing and opti
 
 Real-World Project: Apply everything you learn in a practical project that encompasses the challenges of building responsive and adaptive UIs in Flutter.
 
-1. 5/ Custom Sliver Grid.
+1. 15/ Custom Sliver Grid.
+
