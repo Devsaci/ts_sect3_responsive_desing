@@ -8,7 +8,7 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Color.fromARGB(162, 218, 163, 13),
+        backgroundColor: const Color.fromARGB(250, 248, 189, 25),
         appBar: AppBar(
           backgroundColor: const Color.fromRGBO(59, 54, 107, 42),
           leading:
