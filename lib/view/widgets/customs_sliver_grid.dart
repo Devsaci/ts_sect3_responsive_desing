@@ -13,12 +13,10 @@ class CustomsSliverGrid extends StatelessWidget {
       ),
       itemBuilder: (BuildContext context, int index) {
         return Container(
-          //color: const Color.fromRGBO(54, 33, 240, 1),
-          decoration: const BoxDecoration(
-            borderRadius: BorderRadius.all(
-              Radius.circular(10),
-            ),
-            color: Color.fromRGBO(54, 33, 240, 1),
+          decoration: BoxDecoration(
+            color: const Color.fromRGBO(54, 33, 240, 1),
+            borderRadius: BorderRadius.circular(80),
+            //Radius.circular(30),
           ),
         );
       },
