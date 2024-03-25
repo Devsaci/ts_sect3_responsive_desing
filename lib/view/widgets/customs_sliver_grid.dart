@@ -13,7 +13,8 @@ class CustomsSliverGrid extends StatelessWidget {
       ),
       itemBuilder: (BuildContext context, int index) {
         return Container(
-          color: Colors.teal.shade300,
+          color: const Color.fromRGBO(54, 33, 240, 1),
+          //#1700EB
         );
       },
       itemCount: 4,

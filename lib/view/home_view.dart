@@ -6,15 +6,19 @@ class HomeView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 86, 238, 231),
-      appBar: AppBar(
-        backgroundColor: Colors.teal.shade900,
-        leading: const Icon(Icons.menu, color: Color(0xFFE8F5E9)),
-        title: const Text('Home', style: TextStyle(color: Color(0xFFE8F5E9))),
-        centerTitle: true,
+    return SafeArea(
+      child: Scaffold(
+        backgroundColor: Color.fromARGB(162, 218, 163, 13),
+        appBar: AppBar(
+          backgroundColor: const Color.fromRGBO(59, 54, 107, 42),
+          leading:
+              const Icon(Icons.menu, color: Color.fromRGBO(235, 229, 0, 92)),
+          title: const Text('Home',
+              style: TextStyle(color: Color.fromRGBO(235, 229, 0, 92))),
+          centerTitle: true,
+        ),
+        body: const HomeViewBody(),
       ),
-      body: const HomeViewBody(),
     );
   }
 }
