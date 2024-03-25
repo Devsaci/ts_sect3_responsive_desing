@@ -18,7 +18,7 @@ class CustomsSliverGrid extends StatelessWidget {
             borderRadius: BorderRadius.all(
               Radius.circular(10),
             ),
-            color: Color.fromARGB(255, 218, 163, 13),
+            color: Color.fromRGBO(54, 33, 240, 1),
           ),
         );
       },
