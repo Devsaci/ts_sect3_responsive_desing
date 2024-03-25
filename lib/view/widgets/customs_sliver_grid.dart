@@ -12,15 +12,25 @@ class CustomsSliverGrid extends StatelessWidget {
         crossAxisSpacing: 15,
       ),
       itemBuilder: (BuildContext context, int index) {
-        return Container(
-          decoration: BoxDecoration(
-            color: const Color.fromRGBO(54, 33, 240, 1),
-            borderRadius: BorderRadius.circular(80),
-            //Radius.circular(30),
-          ),
-        );
+        return const CustomItem();
       },
       itemCount: 4,
+    );
+  }
+}
+
+class CustomItem extends StatelessWidget {
+  const CustomItem({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+        color: const Color.fromRGBO(54, 33, 240, 1),
+        borderRadius: BorderRadius.circular(70),
+      ),
     );
   }
 }
