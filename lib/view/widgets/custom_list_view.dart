@@ -21,7 +21,11 @@ class CustomItem2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    throw UnimplementedError();
+    return Container(
+      decoration: BoxDecoration(
+        color: const Color.fromRGBO(54, 33, 240, 1),
+        borderRadius: BorderRadius.circular(70),
+      ),
+    );
   }
 }
