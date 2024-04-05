@@ -17,6 +17,7 @@ class _HomeViewState extends State<HomeView> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        key: scaffoldKey,
         drawer: const CostumDrawer(),
         backgroundColor: const Color.fromARGB(250, 248, 189, 25),
         appBar: AppBar(
