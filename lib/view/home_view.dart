@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:ts_sect3_responsive_desing/view/widgets/home_view_body.dart';
 
+import 'widgets/custom_drawer.dart';
+
 class HomeView extends StatefulWidget {
   const HomeView({super.key});
 
@@ -32,32 +34,6 @@ class _HomeViewState extends State<HomeView> {
           centerTitle: true,
         ),
         body: const HomeViewBody(),
-      ),
-    );
-  }
-}
-
-class CostumDrawer extends StatelessWidget {
-  const CostumDrawer({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Drawer(
-      child: ListView(
-        children: const [
-          DrawerHeader(
-            decoration: BoxDecoration(
-              color: Color.fromRGBO(241, 178, 5, 0.983),
-            ),
-            child: Text('Drawer Header'),
-          ),
-          ListTile(
-            title: Text('Item 1'),
-          ),
-          ListTile(
-            title: Text('Item 2'),
-          ),
-        ],
       ),
     );
   }
