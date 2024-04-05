@@ -11,7 +11,7 @@ class CostumDrawer extends StatelessWidget {
         children: const [
           DrawerHeader(
             decoration: BoxDecoration(
-              color: Color.fromRGBO(241, 178, 5, 0.983),
+              color: Color.fromRGBO(180, 161, 208, 0.98),
             ),
             child: Icon(FontAwesomeIcons.solidHeart, size: 50),
           ),
