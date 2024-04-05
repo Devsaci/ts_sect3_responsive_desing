@@ -22,9 +22,11 @@ class _HomeViewState extends State<HomeView> {
         backgroundColor: const Color.fromARGB(250, 248, 189, 25),
         appBar: AppBar(
           backgroundColor: const Color.fromRGBO(59, 54, 107, 42),
-          leading: const Icon(
-            Icons.menu,
-            color: Color.fromRGBO(235, 229, 0, 92),
+          leading: GestureDetector(
+            child: const Icon(
+              Icons.menu,
+              color: Color.fromRGBO(235, 229, 0, 92),
+            ),
           ),
           title: const Text(
             'Home',
