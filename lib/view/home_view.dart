@@ -23,6 +23,7 @@ class _HomeViewState extends State<HomeView> {
         appBar: AppBar(
           backgroundColor: const Color.fromRGBO(59, 54, 107, 42),
           leading: GestureDetector(
+            onTap: () => scaffoldKey.currentState!.openDrawer(),
             child: const Icon(
               Icons.menu,
               color: Color.fromRGBO(235, 229, 0, 92),
