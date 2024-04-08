@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:ts_sect3_responsive_desing/models/drawer_item_model.dart';
 
 class CustomdrawerItem extends StatelessWidget {
-  const CustomdrawerItem({super.key});
-
+  const CustomdrawerItem({super.key, required this.drawerItemModel});
+  final DrawerItemModel drawerItemModel;
   @override
   Widget build(BuildContext context) {
     return const ListTile(
