@@ -5,6 +5,10 @@ class CustomdrawerItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const ListTile();
+    return const ListTile(
+      leading: Icon(Icons.favorite),
+      title: Text('Favorite'),
+      trailing: Icon(Icons.chevron_right),
+    );
   }
 }
