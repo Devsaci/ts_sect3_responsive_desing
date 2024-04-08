@@ -7,7 +7,7 @@ class CustomdrawerItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return const ListTile(
       leading: Icon(Icons.favorite),
-      title: Text('Favorite'),
+      title: Text('Dashboard'),
       trailing: Icon(Icons.chevron_right),
     );
   }
