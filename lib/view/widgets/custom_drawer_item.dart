@@ -7,7 +7,7 @@ class CustomdrawerItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      leading: Icon(Icons.favorite),
+      leading: Icon(drawerItemModel.icon),
       title: Text(drawerItemModel.title),
       trailing: Icon(Icons.chevron_right),
     );
