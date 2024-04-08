@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
+import 'custom_drawer_item.dart';
+
 class CostumDrawer extends StatelessWidget {
   const CostumDrawer({super.key});
 
@@ -15,12 +17,7 @@ class CostumDrawer extends StatelessWidget {
             ),
             child: Icon(FontAwesomeIcons.solidHeart, size: 50),
           ),
-          ListTile(
-            title: Text('Item 1'),
-          ),
-          ListTile(
-            title: Text('Item 2'),
-          ),
+          CustomdrawerItem(),
         ],
       ),
     );
