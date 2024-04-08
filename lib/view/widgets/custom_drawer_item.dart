@@ -9,7 +9,7 @@ class CustomdrawerItem extends StatelessWidget {
     return ListTile(
       leading: Icon(drawerItemModel.iconLeading),
       title: Text(drawerItemModel.title),
-      trailing: Icon(Icons.chevron_right),
+      trailing: const Icon(Icons.chevron_right),
     );
   }
 }
