@@ -25,6 +25,7 @@ class CostumDrawer extends StatelessWidget {
             child: Icon(FontAwesomeIcons.solidHeart, size: 50),
           ),
           ListView.builder(
+            shrinkWrap: true,
             physics: const NeverScrollableScrollPhysics(),
             itemCount: drawerItems.length,
             itemBuilder: (context, index) {
