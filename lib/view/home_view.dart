@@ -18,7 +18,7 @@ class _HomeViewState extends State<HomeView> {
     return SafeArea(
       child: Scaffold(
         key: scaffoldKey,
-        drawer: CostumDrawer(),
+        drawer: const CostumDrawer(),
         backgroundColor: const Color.fromARGB(250, 248, 189, 25),
         appBar: AppBar(
           backgroundColor: const Color.fromRGBO(59, 54, 107, 42),
