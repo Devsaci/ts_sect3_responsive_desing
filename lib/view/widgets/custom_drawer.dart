@@ -31,6 +31,7 @@ class CostumDrawer extends StatelessWidget {
           //   ),
           // ),
           ListView.builder(
+            itemCount: drawerItems.length,
             itemBuilder: (context, index) {
               return CustomdrawerItem(
                 drawerItemModel: drawerItems[index],
