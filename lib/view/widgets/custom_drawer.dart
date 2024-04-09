@@ -5,9 +5,14 @@ import 'package:ts_sect3_responsive_desing/models/drawer_item_model.dart';
 import 'custom_drawer_item.dart';
 
 class CostumDrawer extends StatelessWidget {
-  const CostumDrawer({super.key});
+  CostumDrawer({super.key});
 
-  final List<DrawerItemModel> Items = const [];
+  final List<DrawerItemModel> drawerItems = [
+    DrawerItemModel(title: 'Dashboard', iconLeading: Icons.dashboard),
+    DrawerItemModel(title: 'Settings', iconLeading: Icons.settings),
+    DrawerItemModel(title: 'About', iconLeading: Icons.info),
+    DrawerItemModel(title: 'Logout', iconLeading: Icons.logout),
+  ];
   @override
   Widget build(BuildContext context) {
     return Drawer(
