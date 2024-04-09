@@ -24,13 +24,8 @@ class CostumDrawer extends StatelessWidget {
             ),
             child: Icon(FontAwesomeIcons.solidHeart, size: 50),
           ),
-          // CustomdrawerItem(
-          //   drawerItemModel: DrawerItemModel(
-          //     title: 'Dashboard',
-          //     iconLeading: Icons.dashboard,
-          //   ),
-          // ),
           ListView.builder(
+            physics: const NeverScrollableScrollPhysics(),
             itemCount: drawerItems.length,
             itemBuilder: (context, index) {
               return CustomdrawerItem(
