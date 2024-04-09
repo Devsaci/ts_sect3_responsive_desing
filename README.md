@@ -25,3 +25,4 @@ Real-World Project: Apply everything you learn in a practical project that encom
 5. 19/ Drawer Header.
 6. 20/ Drawer item and model
 7. 21/ Mobile layout done
+8. 23/ Tablet layout 1
