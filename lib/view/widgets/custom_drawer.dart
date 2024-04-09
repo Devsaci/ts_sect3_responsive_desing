@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:ts_sect3_responsive_desing/models/drawer_item_model.dart';
 
-import 'custom_drawer_item.dart';
+import 'custom_drawer_items_list_view.dart';
 
 class CostumDrawer extends StatelessWidget {
   CostumDrawer({super.key});
@@ -27,29 +27,6 @@ class CostumDrawer extends StatelessWidget {
           CustomDrawerItemsListView(drawerItems: drawerItems),
         ],
       ),
-    );
-  }
-}
-
-class CustomDrawerItemsListView extends StatelessWidget {
-  const CustomDrawerItemsListView({
-    super.key,
-    required this.drawerItems,
-  });
-
-  final List<DrawerItemModel> drawerItems;
-
-  @override
-  Widget build(BuildContext context) {
-    return ListView.builder(
-      shrinkWrap: true,
-      physics: const NeverScrollableScrollPhysics(),
-      itemCount: drawerItems.length,
-      itemBuilder: (context, index) {
-        return CustomdrawerItem(
-          drawerItemModel: drawerItems[index],
-        );
-      },
     );
   }
 }
