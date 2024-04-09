@@ -7,12 +7,14 @@ import 'custom_drawer_items_list_view.dart';
 class CostumDrawer extends StatelessWidget {
   const CostumDrawer({super.key});
 
-  final List<DrawerItemModel> drawerItems = const [
-    // DrawerItemModel(title: 'Dashboard', iconLeading: Icons.dashboard),
-    // DrawerItemModel(title: 'Settings', iconLeading: Icons.settings),
-    // DrawerItemModel(title: 'About', iconLeading: Icons.info),
-    // DrawerItemModel(title: 'Logout', iconLeading: Icons.logout),
+  static List<DrawerItemModel> drawerItems = const [
+    DrawerItemModel(title: 'Home', iconLeading: Icons.home),
+    DrawerItemModel(title: 'Dashboard', iconLeading: Icons.dashboard),
+    DrawerItemModel(title: 'Settings', iconLeading: Icons.settings),
+    DrawerItemModel(title: 'About', iconLeading: Icons.info),
+    DrawerItemModel(title: 'Logout', iconLeading: Icons.logout),
   ];
+
   @override
   Widget build(BuildContext context) {
     return Drawer(
@@ -24,7 +26,9 @@ class CostumDrawer extends StatelessWidget {
             ),
             child: Icon(FontAwesomeIcons.solidHeart, size: 50),
           ),
-          CustomDrawerItemsListView(drawerItems: drawerItems),
+          CustomDrawerItemsListView(
+            drawerItems: drawerItems,
+          ),
         ],
       ),
     );
