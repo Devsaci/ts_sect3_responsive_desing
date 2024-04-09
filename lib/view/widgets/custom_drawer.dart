@@ -7,6 +7,7 @@ import 'custom_drawer_item.dart';
 class CostumDrawer extends StatelessWidget {
   const CostumDrawer({super.key});
 
+  final List<DrawerItemModel> Items = const [];
   @override
   Widget build(BuildContext context) {
     return Drawer(
