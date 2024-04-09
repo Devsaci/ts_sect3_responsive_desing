@@ -7,7 +7,7 @@ import 'custom_drawer_items_list_view.dart';
 class CostumDrawer extends StatelessWidget {
   const CostumDrawer({super.key});
 
-  static List<DrawerItemModel> drawerItems = const [
+  static const List<DrawerItemModel> drawerItems = [
     DrawerItemModel(title: 'Home', iconLeading: Icons.home),
     DrawerItemModel(title: 'Dashboard', iconLeading: Icons.dashboard),
     DrawerItemModel(title: 'Settings', iconLeading: Icons.settings),
