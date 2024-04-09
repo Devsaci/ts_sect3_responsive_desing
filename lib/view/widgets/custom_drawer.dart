@@ -24,18 +24,32 @@ class CostumDrawer extends StatelessWidget {
             ),
             child: Icon(FontAwesomeIcons.solidHeart, size: 50),
           ),
-          ListView.builder(
-            shrinkWrap: true,
-            physics: const NeverScrollableScrollPhysics(),
-            itemCount: drawerItems.length,
-            itemBuilder: (context, index) {
-              return CustomdrawerItem(
-                drawerItemModel: drawerItems[index],
-              );
-            },
-          ),
+          CustomDrawerItemsListView(drawerItems: drawerItems),
         ],
       ),
+    );
+  }
+}
+
+class CustomDrawerItemsListView extends StatelessWidget {
+  const CustomDrawerItemsListView({
+    super.key,
+    required this.drawerItems,
+  });
+
+  final List<DrawerItemModel> drawerItems;
+
+  @override
+  Widget build(BuildContext context) {
+    return ListView.builder(
+      shrinkWrap: true,
+      physics: const NeverScrollableScrollPhysics(),
+      itemCount: drawerItems.length,
+      itemBuilder: (context, index) {
+        return CustomdrawerItem(
+          drawerItemModel: drawerItems[index],
+        );
+      },
     );
   }
 }
