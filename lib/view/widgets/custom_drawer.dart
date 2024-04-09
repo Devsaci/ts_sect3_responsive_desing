@@ -17,9 +17,9 @@ class CostumDrawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Drawer(
-      child: Column(
-        children: [
+    return Drawer(
+      child: ListView(
+        children: const [
           DrawerHeader(
             decoration: BoxDecoration(
               color: Color.fromRGBO(180, 161, 208, 0.98),
