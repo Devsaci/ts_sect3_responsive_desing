@@ -23,7 +23,7 @@ class HomeViewBody extends StatelessWidget {
               builder: (context, constraints) {
                 // return const CustomsSliverGrid();
                 if (constraints.maxWidth > 600) {
-                  return const CustomList();
+                  return const AspectRatio(aspectRatio: 1, child: CustomList());
                 } else {
                   return const CustomsSliverGrid();
                 }
