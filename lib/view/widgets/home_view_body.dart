@@ -24,7 +24,7 @@ class HomeViewBody extends StatelessWidget {
                 if (constraints.maxWidth > 600) {
                   return const Text("Tablet Lauout");
                 } else {
-                  return const Text("Mobile Layout");
+                  return const CustomsSliverGrid();
                 }
               },
             ),
