@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:ts_sect3_responsive_desing/view/widgets/custom_list.dart';
 
 import 'custom_list_view.dart';
 import 'customs_sliver_grid.dart';
@@ -22,7 +23,7 @@ class HomeViewBody extends StatelessWidget {
               builder: (context, constraints) {
                 // return const CustomsSliverGrid();
                 if (constraints.maxWidth > 600) {
-                  return const Text("Tablet Lauout");
+                  return const CustomList();
                 } else {
                   return const CustomsSliverGrid();
                 }
