@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'custom_list_view.dart';
@@ -8,18 +9,22 @@ class HomeViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
-      padding: EdgeInsets.symmetric(horizontal: 15),
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 15),
       child: CustomScrollView(
         slivers: [
-          SliverToBoxAdapter(
+          const SliverToBoxAdapter(
             child: SizedBox(height: 15),
           ),
-          CustomsSliverGrid(),
-          SliverToBoxAdapter(
+          LayoutBuilder(
+            builder: (context, constraints) {
+              return const CustomsSliverGrid();
+            },
+          ),
+          const SliverToBoxAdapter(
             child: SizedBox(height: 15),
           ),
-          CustomSliverListView(),
+          const CustomSliverListView(),
         ],
       ),
     );
