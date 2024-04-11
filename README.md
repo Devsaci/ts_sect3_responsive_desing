@@ -28,3 +28,4 @@ Real-World Project: Apply everything you learn in a practical project that encom
 8. 23/ Tablet layout 1/2
 9. 25/ Tablet breakpoin
 10. 26/ Tablet layout done
+11. 27/ Refactor code
