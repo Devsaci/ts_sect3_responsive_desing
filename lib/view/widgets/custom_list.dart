@@ -7,8 +7,12 @@ class CustomList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(itemBuilder: (context, index) {
-      return const CustomItem();
-    });
+    return ListView.builder(
+      itemCount: 10,
+      scrollDirection: Axis.horizontal,
+      itemBuilder: (context, index) {
+        return const CustomItem();
+      },
+    );
   }
 }
