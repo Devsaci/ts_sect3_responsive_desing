@@ -27,3 +27,4 @@ Real-World Project: Apply everything you learn in a practical project that encom
 7. 21/ Mobile layout done
 8. 23/ Tablet layout 1/2
 9. 25/ Tablet breakpoin
+10. 26/ Tablet layout done
