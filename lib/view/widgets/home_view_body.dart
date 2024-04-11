@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 import 'custom_list_view.dart';
 import 'customs_sliver_grid.dart';
@@ -16,10 +17,12 @@ class HomeViewBody extends StatelessWidget {
           const SliverToBoxAdapter(
             child: SizedBox(height: 15),
           ),
-          LayoutBuilder(
-            builder: (context, constraints) {
-              return const CustomsSliverGrid();
-            },
+          SliverToBoxAdapter(
+            child: LayoutBuilder(
+              builder: (context, constraints) {
+                return const CustomsSliverGrid();
+              },
+            ),
           ),
           const SliverToBoxAdapter(
             child: SizedBox(height: 15),
