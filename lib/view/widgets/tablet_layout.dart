@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ts_sect3_responsive_desing/view/widgets/custom_list.dart';
 
 import 'custom_list_view.dart';
 import 'customs_sliver_grid.dart';
@@ -11,7 +12,10 @@ class TabletLayout extends StatelessWidget {
     return const CustomScrollView(
       slivers: [
         SliverToBoxAdapter(child: SizedBox(height: 15)),
-        CustomsSliverGrid(),
+        //CustomsSliverGrid(),
+        CustomList(), // Error :
+//         ════════ Exception caught by widgets library ═══════════════════════════════════
+// A RenderViewport expected a child of type RenderSliver but received a child of type RenderErrorBox.
         SliverToBoxAdapter(child: SizedBox(height: 15)),
         CustomSliverListView(),
       ],
