@@ -12,9 +12,7 @@ class TabletLayout extends StatelessWidget {
       slivers: [
         SliverToBoxAdapter(child: SizedBox(height: 15)),
         //CustomsSliverGrid(),
-        CustomList(), // Error :
-//         ════════ Exception caught by widgets library ═══════════════════════════════════
-// A RenderViewport expected a child of type RenderSliver but received a child of type RenderErrorBox.
+        CustomList(),
         SliverToBoxAdapter(child: SizedBox(height: 15)),
         CustomSliverListView(),
       ],
