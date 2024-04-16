@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:ts_sect3_responsive_desing/view/widgets/custom_list.dart';
 
 import 'custom_list_view.dart';
-import 'customs_sliver_grid.dart';
 
 class TabletLayout extends StatelessWidget {
   const TabletLayout({super.key});

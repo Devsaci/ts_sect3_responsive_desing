@@ -1,9 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-
-import 'custom_list_view.dart';
-
 import 'mobile_layout.dart';
 import 'tablet_layout.dart';
 
