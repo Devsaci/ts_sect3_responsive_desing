@@ -30,3 +30,4 @@ Real-World Project: Apply everything you learn in a practical project that encom
 10. 26/ Tablet layout done
 11. 27/ Refactor code
 12. 28/ Adding desktop layout
+13. 29/ Desktop layout part one
