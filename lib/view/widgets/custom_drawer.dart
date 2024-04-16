@@ -4,8 +4,8 @@ import 'package:ts_sect3_responsive_desing/models/drawer_item_model.dart';
 
 import 'custom_drawer_items_list_view.dart';
 
-class CostumDrawer extends StatelessWidget {
-  const CostumDrawer({super.key});
+class CustumDrawer extends StatelessWidget {
+  const CustumDrawer({super.key});
 
   static const List<DrawerItemModel> drawerItems = [
     DrawerItemModel(title: 'Home', iconLeading: Icons.home),
