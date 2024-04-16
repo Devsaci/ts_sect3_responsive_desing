@@ -5,6 +5,7 @@ import 'package:flutter/widgets.dart';
 import 'custom_list_view.dart';
 
 import 'mobile_layout.dart';
+import 'tablet_layout.dart';
 
 class HomeViewBody extends StatelessWidget {
   const HomeViewBody({super.key});
@@ -14,6 +15,9 @@ class HomeViewBody extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 15),
       child: LayoutBuilder(builder: (context, constraints) {
+        if (constraints.maxWidth > 600) {
+          return const TabletLayout();
+        }
         return const MobileLayout();
       }),
     );
