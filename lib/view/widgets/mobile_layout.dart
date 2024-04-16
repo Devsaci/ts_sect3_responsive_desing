@@ -12,13 +12,9 @@ class MobileLayout extends StatelessWidget {
   Widget build(BuildContext context) {
     return const CustomScrollView(
       slivers: [
-        SliverToBoxAdapter(
-          child: SizedBox(height: 15),
-        ),
+        SliverToBoxAdapter(child: SizedBox(height: 15)),
         CustomsSliverGrid(),
-        SliverToBoxAdapter(
-          child: SizedBox(height: 15),
-        ),
+        SliverToBoxAdapter(child: SizedBox(height: 15)),
         CustomSliverListView(),
       ],
     );
