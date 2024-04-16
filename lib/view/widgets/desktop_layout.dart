@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 import 'custom_drawer.dart';
-import 'custom_list.dart';
+import 'tablet_layout.dart';
 
 class DesktopLayout extends StatelessWidget {
   const DesktopLayout({super.key});
@@ -11,6 +12,7 @@ class DesktopLayout extends StatelessWidget {
     return const Row(
       children: [
         CustumDrawer(),
+        Expanded(child: TabletLayout()),
       ],
     );
   }
