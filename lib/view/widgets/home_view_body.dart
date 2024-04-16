@@ -12,15 +12,18 @@ class HomeViewBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 15),
-      child: LayoutBuilder(builder: (context, constraints) {
-        if (constraints.maxWidth < 600) {
-          return const MobileLayout();
-        } else if (constraints.maxWidth < 900) {
-          return const TabletLayout();
-        } else {
-          return const DesktopLayout();
-        }
-      }),
+      child: LayoutBuilder(
+        builder: (context, constraints) {
+          switch (constraints.maxWidth) {
+            case < 600:
+              return const MobileLayout();
+            case < 900:
+              return const TabletLayout();
+            default:
+              return const DesktopLayout();
+          }
+        },
+      ),
     );
   }
 }
