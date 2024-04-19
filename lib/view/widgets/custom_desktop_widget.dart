@@ -9,6 +9,7 @@ class CustomDesktopWidget extends StatelessWidget {
     return const Column(
       children: [
         CustomItem(),
+        CustomItem(),
       ],
     );
   }

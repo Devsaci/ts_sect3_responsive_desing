@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -19,7 +20,12 @@ class DesktopLayout extends StatelessWidget {
             child: TabletLayout(),
           ),
         ),
-        CustomDesktopWidget(),
+        Expanded(
+          child: Padding(
+            padding: EdgeInsets.symmetric(horizontal: 15),
+            child: CustomDesktopWidget(),
+          ),
+        ),
       ],
     );
   }
