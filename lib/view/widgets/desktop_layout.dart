@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
+import 'custom_desktop_widget.dart';
 import 'custom_drawer.dart';
 import 'tablet_layout.dart';
 
@@ -18,6 +19,7 @@ class DesktopLayout extends StatelessWidget {
             child: TabletLayout(),
           ),
         ),
+        CustomDesktopWidget(),
       ],
     );
   }
