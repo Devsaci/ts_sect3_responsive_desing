@@ -5,7 +5,7 @@ class CustomItem extends StatelessWidget {
     super.key,
     this.color,
   });
-  final Colors? color;
+  final Color? color;
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +13,8 @@ class CustomItem extends StatelessWidget {
       height: 100,
       width: 100,
       decoration: BoxDecoration(
-        color: const Color.fromRGBO(54, 33, 240, 1),
+        color: color ?? const Color.fromRGBO(54, 33, 240, 1),
+        // color: const Color.fromRGBO(54, 33, 240, 1),
         borderRadius: BorderRadius.circular(10),
       ),
     );
