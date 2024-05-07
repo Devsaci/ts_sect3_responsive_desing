@@ -15,16 +15,10 @@ class DesktopLayout extends StatelessWidget {
       children: [
         CustumDrawer(),
         Expanded(
-          child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: 15),
-            child: TabletLayout(),
-          ),
+          child: TabletLayout(),
         ),
         Expanded(
-          child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: 15),
-            child: CustomDesktopWidget(),
-          ),
+          child: CustomDesktopWidget(),
         ),
       ],
     );
