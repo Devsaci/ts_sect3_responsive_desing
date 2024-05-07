@@ -13,8 +13,11 @@ class DesktopLayout extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Row(
       children: [
-        CustumDrawer(),
         Expanded(
+          child: CustumDrawer(),
+        ),
+        Expanded(
+          flex: 3,
           child: TabletLayout(),
         ),
         Expanded(
