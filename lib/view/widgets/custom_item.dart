@@ -10,7 +10,7 @@ class CustomItem extends StatelessWidget {
       // height: 100,
       // width: 100,
       decoration: BoxDecoration(
-        color: color ?? const Color.fromRGBO(54, 33, 240, 1),
+        color: color ?? const Color.fromARGB(255, 21, 9, 128),
         // color: const Color.fromRGBO(54, 33, 240, 1),
         borderRadius: BorderRadius.circular(10),
       ),
