@@ -13,11 +13,18 @@ class CustomDesktopWidget extends StatelessWidget {
       children: [
         Expanded(
           flex: 2,
-          child: CustomItem(),
+          child: Padding(
+            padding:
+                EdgeInsets.symmetric(vertical: 16.0), // EdgeInsets.all(8.0),
+            child: CustomItem(),
+          ),
         ),
-        SizedBox(height: 10),
+        //SizedBox(height: 1),
         Expanded(
-          child: CustomItem2(),
+          child: Padding(
+            padding: EdgeInsets.only(bottom: 16.0),
+            child: CustomItem2(),
+          ),
         ),
       ],
     );
