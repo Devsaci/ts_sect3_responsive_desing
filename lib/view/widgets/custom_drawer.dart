@@ -18,6 +18,7 @@ class CustumDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
+      backgroundColor: const Color.fromARGB(249, 213, 158, 6),
       child: ListView(
         children: const [
           DrawerHeader(
