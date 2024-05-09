@@ -19,9 +19,9 @@ class _HomeViewState extends State<HomeView> {
       child: Scaffold(
         key: scaffoldKey,
         drawer: const CustumDrawer(),
-        backgroundColor: const Color.fromARGB(250, 248, 189, 25),
+        backgroundColor: const Color.fromARGB(249, 213, 158, 6),
         appBar: AppBar(
-          backgroundColor: const Color.fromRGBO(59, 54, 107, 42),
+          backgroundColor: const Color.fromARGB(213, 13, 4, 96),
           leading: GestureDetector(
             onTap: () => scaffoldKey.currentState!.openDrawer(),
             child: const Icon(
