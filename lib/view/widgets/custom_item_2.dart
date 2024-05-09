@@ -6,10 +6,10 @@ class CustomItem2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 100,
+      height: 80,
       decoration: BoxDecoration(
-        color: const Color.fromARGB(255, 246, 207, 9),
-        borderRadius: BorderRadius.circular(10),
+        color: const Color.fromARGB(255, 241, 215, 136),
+        borderRadius: BorderRadius.circular(20),
       ),
     );
   }
