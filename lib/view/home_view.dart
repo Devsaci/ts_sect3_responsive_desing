@@ -25,8 +25,9 @@ class _HomeViewState extends State<HomeView> {
           leading: GestureDetector(
             onTap: () => scaffoldKey.currentState!.openDrawer(),
             child: const Icon(
-              Icons.menu,
+              Icons.menu_book,
               color: Color.fromRGBO(235, 229, 0, 92),
+              size: 50,
             ),
           ),
           title: const Text(
