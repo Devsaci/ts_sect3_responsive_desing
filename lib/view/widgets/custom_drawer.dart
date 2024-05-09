@@ -22,9 +22,13 @@ class CustumDrawer extends StatelessWidget {
         children: const [
           DrawerHeader(
             decoration: BoxDecoration(
-              color: Color.fromRGBO(180, 161, 208, 0.98),
+              color: Color.fromRGBO(108, 27, 46, 0.973),
             ),
-            child: Icon(FontAwesomeIcons.solidHeart, size: 50),
+            child: Icon(
+              FontAwesomeIcons.solidIdBadge,
+              size: 100,
+              color: Color.fromARGB(255, 137, 137, 5),
+            ),
           ),
           CustomDrawerItemsListView(
             drawerItems: drawerItems,
